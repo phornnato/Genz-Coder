@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+
+.koulen {
+  font-family: 'Koulen', sans-serif;
+}
+.koulen {
+  
+  padding-top: 0.30em;          /* Prevent top cut */
+  padding-bottom: 0.25em;       /* Prevent bottom cut */
+  display: inline-block;        /* Ensures padding is respected */
+}
+
+.kantumruy-pro{
+  font-family: "Kantumruy Pro", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.bayon-regular {
+  font-family: "Bayon", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+

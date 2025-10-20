@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GenZ Coder</title>
+  <link rel="stylesheet" href="./asset/css/index.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+  <header class="bg-white dark:bg-gray-900 fixed top-0 left-0 w-full shadow-md z-50 transition-colors duration-500">
+    <div class="px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20 py-3 flex items-center justify-between">
+
+      <!-- Logo -->
+      <div class="text-xl sm:text-2xl font-bold koulen tracking-wide">
+        <span class="bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 text-transparent bg-clip-text">
+          កូដជេនហ្សី
+        </span>
+      </div>
+
+      <!-- Desktop Nav -->
+      <nav
+        class="hidden md:flex kantumruy-pro justify-center space-x-2 lg:space-x-4 xl:space-x-6 text-gray-700 dark:text-gray-200 font-medium">
+        <a href="/"
+          class="relative overflow-hidden group px-3 py-2 rounded-lg bg-gradient-to-r from-cyan-400 to-blue-500 text-white">
+          <span class="absolute inset-0 bg-gradient-to-r from-cyan-400 to-blue-500 opacity-10 rounded-lg"></span>
+          <span class="relative flex items-center gap-2">
+            <!-- Icon placeholder -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-house" aria-hidden="true">
+              <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path>
+              <path
+                d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z">
+              </path>
+            </svg>
+            <span class="hidden lg:inline relative">
+              ទំព័រដើម
+              <!-- <span class="absolute left-0 -bottom-0.5 h-[2px] w-0 bg-blue-400 group-hover:w-full transition-all duration-300"></span> -->
+              <span
+                class="absolute left-0 -bottom-0.5 h-[2px] w-0 bg-blue-400 transition-all duration-300 w-full"></span>
+            </span>
+          </span>
+        </a>
+
+        <a href="courses.html" class="relative overflow-hidden group px-3 py-2 rounded-lg">
+          <span class="absolute inset-0 bg-gradient-to-r from-cyan-400 to-blue-500 opacity-10 rounded-lg"></span>
+          <span class="relative flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-book-open" aria-hidden="true">
+              <path d="M12 7v14"></path>
+              <path
+                d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z">
+              </path>
+            </svg>
+            <span class="hidden lg:inline relative">
+              វគ្គសិក្សា
+              <span
+                class="absolute left-0 -bottom-0.5 h-[2px] w-0 bg-blue-400 group-hover:w-full transition-all duration-300"></span>
+            </span>
+          </span>
+        </a>
+
+        <a href="about.html" class="relative overflow-hidden group px-3 py-2 rounded-lg">
+          <span class="absolute inset-0 bg-gradient-to-r from-cyan-400 to-blue-500 opacity-10 rounded-lg"></span>
+          <span class="relative flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-info" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M12 16v-4"></path>
+              <path d="M12 8h.01"></path>
+            </svg>
+            <span class="hidden lg:inline relative">
+              អំពីយើង
+              <span
+                class="absolute left-0 -bottom-0.5 h-[2px] w-0 bg-blue-400 group-hover:w-full transition-all duration-300"></span>
+            </span>
+          </span>
+        </a>
+
+        <a href="contact.html" class="relative overflow-hidden group px-3 py-2 rounded-lg">
+          <span class="absolute inset-0 bg-gradient-to-r from-cyan-400 to-blue-500 opacity-10 rounded-lg"></span>
+          <span class="relative flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-mail" aria-hidden="true">
+              <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
+              <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+            </svg>
+            <span class="hidden lg:inline relative">
+              ទំនាក់ទំនង
+              <span
+                class="absolute left-0 -bottom-0.5 h-[2px] w-0 bg-blue-400 group-hover:w-full transition-all duration-300"></span>
+            </span>
+          </span>
+        </a>
+      </nav>
+
+      <!-- Right Controls -->
+      <div class="flex items-center gap-2 sm:gap-3">
+
+        <div class="flex items-center gap-2 sm:gap-3">
+          <div
+            class="relative w-20 h-8 flex items-center rounded-full  bg-blue-600/10 dark:bg-blue-500/20 shadow-md cursor-pointer overflow-hidden select-none  transition-all duration-300"
+            tabindex="0" style="transform: none;">
+            <div class="absolute flex justify-between w-full px-3 text-[11px] font-semibold" style="opacity: 1;"><span
+                class="text-gray-950 dark:text-white">EN</span><span
+                class="text-blue-600 dark:text-cyan-300 font-bold">KH</span></div>
+            <div
+              class="absolute w-1/2 h-full flex items-center justify-center  bg-blue-600/20 dark:bg-blue-400/40 rounded-full shadow z-10"
+              style="transform: translateX(100%) rotate(360deg);">
+              <div class="w-5 h-5 rounded-full overflow-hidden border border-white shadow" tabindex="0"><img alt="Flag"
+                  class="w-full h-full object-cover"
+                  src="https://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_Cambodia.svg"></div>
+            </div>
+          </div><button
+            class="p-2 rounded-full bg-blue-600/10 dark:bg-blue-500/20 text-blue-500 dark:text-blue-400 shadow-md transition-all duration-300"
+            tabindex="0">
+            <div style="opacity: 1; transform: none;"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                viewBox="0 0 512 512" class="text-gray-800 dark:text-gray-200" height="20" width="20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M283.211 512c78.962 0 151.079-35.925 198.857-94.792 7.068-8.708-.639-21.43-11.562-19.35-124.203 23.654-238.262-71.576-238.262-196.954 0-72.222 38.662-138.635 101.498-174.394 9.686-5.512 7.25-20.197-3.756-22.23A258.156 258.156 0 0 0 283.211 0c-141.309 0-256 114.511-256 256 0 141.309 114.511 256 256 256z">
+                </path>
+              </svg></div>
+          </button><button class="md:hidden text-gray-700 dark:text-gray-200 ml-1" aria-label="Toggle menu"
+            tabindex="0">
+            <div style="transform: none;"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" class="lucide lucide-menu" aria-hidden="true">
+                <path d="M4 12h16"></path>
+                <path d="M4 18h16"></path>
+                <path d="M4 6h16"></path>
+              </svg></div>
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Mobile Menu -->
+    <div
+      class="md:hidden absolute top-full right-4 mt-2 w-14 bg-white dark:bg-gray-800 rounded-lg shadow-xl border border-gray-200 dark:border-gray-700 overflow-hidden z-50">
+      <nav class="flex flex-col items-center py-2">
+        <a href="/"
+          class="p-3 rounded-full m-1 hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-600 dark:text-gray-300">🏠</a>
+        <a href="courses.html"
+          class="p-3 rounded-full m-1 hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-600 dark:text-gray-300">📚</a>
+        <a href="about.html"
+          class="p-3 rounded-full m-1 hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-600 dark:text-gray-300">ℹ️</a>
+        <a href="contact.html"
+          class="p-3 rounded-full m-1 hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-600 dark:text-gray-300">✉️</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="flex-grow py-19 bg-gray-100 shadow-2xl dark:bg-gray-950 dark:text-white">
+    <div class="mt-1 w-full max-w-[1400px] mx-auto px-4">
+      <!-- Hero Slideshow -->
+      <div class="w-full bg-white rounded-xl dark:bg-gray-900 relative p-2 md:p-6 flex items-center justify-center">
+        <!-- Text Content -->
+        <div class="relative text-center max-w-6xl mx-auto space-y-4">
+          <h2
+            class="koulen text-3xl md:text-4xl lg:text-6xl bg-gradient-to-b from-cyan-400 to-purple-500 bg-clip-text text-transparent font-bold tracking-wide">
+            អស់បារម្មណ៍ហើយចំពោះអ្នកដែលខ្សោយកូដ
+
+          </h2>
+          <h2
+            class="koulen text-3xl md:text-4xl lg:text-6xl bg-gradient-to-b from-cyan-400 to-purple-500 bg-clip-text text-transparent font-bold tracking-wide">
+            ចាប់ផ្តើមជាមួយពួកយើង GenZ Coder
+          </h2>
+          <!-- <h2 class="koulen text-3xl md:text-4xl lg:text-6xl bg-gradient-to-b from-cyan-400 to-purple-500 bg-clip-text text-transparent font-bold leading-normal tracking-wide">
+        ចាប់ផ្តើមឥឡូវនេះ
+      </h2> -->
+          <p class="kantumruy-pro md:text-xl text-gray-700 dark:text-gray-300 mb-6 leading-[2]">
+            សិក្សាជាមួយពួកយើង ទទួលបានចំណេះដឹងនិងជំនាញដើម្បីពង្រឹងសមត្ថភាពរបស់លោកអ្នកបន្ថែម
+          </p>
+
+          <!-- Buttons -->
+          <div class="mt-6 w-full max-w-4xl mx-auto px-2">
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+              <button type="button" aria-label="រៀនគិត"
+                class="group relative w-full h-12 rounded-2xl border-2 border-cyan-400 text-cyan-500 koulen shadow-md overflow-hidden transition-all duration-500 hover:text-white">
+                <span
+                  class="absolute inset-0 rounded-2xl bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 opacity-0 group-hover:opacity-70 transition-opacity duration-500"></span>
+                <span class="relative z-10">រៀនគិត</span>
+              </button>
+
+              <button type="button" aria-label="រៀនធ្វើ"
+                class="group relative w-full h-12 rounded-2xl border-2 border-cyan-400 text-cyan-500 koulen shadow-md overflow-hidden transition-all duration-500 hover:text-white">
+                <span
+                  class="absolute inset-0 rounded-2xl bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 opacity-0 group-hover:opacity-70 transition-opacity duration-500"></span>
+                <span class="relative z-10">រៀនធ្វើ</span>
+              </button>
+
+              <button type="button" aria-label="រៀនស្រាវជ្រាវ"
+                class="group relative col-span-2 sm:col-span-1 w-full h-12 rounded-2xl border-2 border-cyan-400 text-cyan-500 koulen shadow-md overflow-hidden transition-all duration-500 hover:text-white justify-self-center">
+                <span
+                  class="absolute inset-0 rounded-2xl bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 opacity-0 group-hover:opacity-70 transition-opacity duration-500"></span>
+                <span class="relative z-10">រៀនស្រាវជ្រាវ</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Code Editor Mockups -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+            <div class="relative bg-white dark:bg-gray-800 mx-2 mt-4 rounded-xl shadow-lg overflow-hidden">
+              <div
+                class="flex items-center gap-2 px-4 py-2 bg-gray-100 dark:bg-blue-900 border-b border-gray-200 dark:border-gray-700">
+                <span class="w-3 h-3 rounded-full bg-red-500"></span>
+                <span class="w-3 h-3 rounded-full bg-yellow-400"></span>
+                <span class="w-3 h-3 rounded-full bg-green-500"></span>
+                <span class="ml-3 text-xs text-gray-500 dark:text-gray-400">app.js</span>
+              </div>
+              <div class="p-3 bg-gray-200 dark:bg-gray-900 text-white text-left font-mono rounded-xl m-3 h-[200px]">
+                <!-- Placeholder for CodeTyping -->
+                <p class="text-yellow-500 pb-4">
+                  ហេតុអ្វីបានជាត្រូវសិក្សាបន្ថែមជាមួយពួកយើង?
+                </p>
+                <p class="text-blue-500 pb-4" id="typingCode1"></p>
+              </div>
+            </div>
+
+            <div class="relative bg-white dark:bg-gray-800 mx-2 mt-4 rounded-xl shadow-lg overflow-hidden">
+              <div
+                class="flex items-center gap-2 px-4 py-2 bg-gray-100 dark:bg-blue-900 border-b border-gray-200 dark:border-gray-700">
+                <span class="w-3 h-3 rounded-full bg-red-500"></span>
+                <span class="w-3 h-3 rounded-full bg-yellow-400"></span>
+                <span class="w-3 h-3 rounded-full bg-green-500"></span>
+                <span class="ml-3 text-xs text-gray-500 dark:text-gray-400">app.js</span>
+              </div>
+              <div class="p-3 bg-gray-200 dark:bg-gray-900 text-white text-left font-mono rounded-xl m-3 h-[200px]">
+                <!-- Placeholder for TypingCode -->
+                <code class="text-blue-500 pb-4" id="typingCode2"></code>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section Title: Our Vision -->
+      <div class="text-center pt-4">
+        <h1
+          class="koulen text-3xl lg:text-4xl bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 bg-clip-text text-transparent">
+          ទស្សនៈវិស័យរបស់យើង
+        </h1>
+      </div>
+
+      <!-- Why Choose Us Section Placeholder -->
+      <div id="why-choose-us" class="mt-6">
+
+        <section class="relative py-6 rounded-xl bg-white dark:bg-gray-900 overflow-hidden">
+          <div
+            class="absolute inset-0 -z-10 bg-gradient-to-r from-blue-500/20 via-cyan-400/10 to-purple-500/20 blur-3xl">
+          </div>
+          <div class="max-w-8xl mx-auto px-6 text-center">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              <div
+                class="relative group p-8 rounded-3xl bg-white/70 dark:bg-gray-900/60  backdrop-blur-xl shadow-lg shadow-2xl cursor-pointer  "
+                style="opacity: 1; transform: none;">
+                <div
+                  class="absolute inset-0 rounded-3xl border-2 border-blue-400/40  dark:border-blue-400/30 group-hover:shadow-[0_0_20px_rgba(59,130,246,0.5)]  transition duration-500 pointer-events-none">
+                </div>
+                <div class="text-6xl mb-5 transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3">
+                  💡
+                </div>
+                <h3
+                  class="kantumruy-pro text-xl font-bold text-gray-800 dark:text-gray-100 mb-3 transition-colors duration-500 group-hover:text-blue-500">
+                  ចំណេះដឹងសម្រាប់មនុស្សគ្រប់គ្នា</h3>
+                <p class="kantumruy-pro text-dark-800 dark:text-white text-sm leading-relaxed">
+                  ចែករំលែកចំណេះដឹងដោយឥតគិតថ្លៃ
+                  ដើម្បីអោយអ្នកជំនាន់ក្រោយទទួលបានការសិក្សាដោយទំនុកចិត្ត។</p>
+              </div>
+              <div
+                class="relative group p-8 rounded-3xl bg-white/70 dark:bg-gray-900/60  backdrop-blur-xl shadow-lg shadow-2xl cursor-pointer  "
+                style="opacity: 1; transform: none;">
+                <div
+                  class="absolute inset-0 rounded-3xl border-2 border-blue-400/40  dark:border-blue-400/30 group-hover:shadow-[0_0_20px_rgba(59,130,246,0.5)]  transition duration-500 pointer-events-none">
+                </div>
+                <div class="text-6xl mb-5 transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3">
+                  💬
+                </div>
+                <h3
+                  class="kantumruy-pro text-xl font-bold text-gray-800 dark:text-gray-100 mb-3 transition-colors duration-500 group-hover:text-blue-500">
+                  ជំនួយ និងដំណោះស្រាយ</h3>
+                <p class="kantumruy-pro text-dark-800 dark:text-white text-sm leading-relaxed">
+                  ទទួលបានសេវាកម្មការព្រឹក្សា
+                  យោលបល់បន្ថែមដែលអ្នកសិក្សាកំពុងជួបបញ្ហានិងកំពុងស្វែងរកដំណោះស្រាយ។</p>
+              </div>
+              <div
+                class="relative group p-8 rounded-3xl bg-white/70 dark:bg-gray-900/60  backdrop-blur-xl shadow-lg shadow-2xl cursor-pointer  "
+                style="opacity: 1; transform: none;">
+                <div
+                  class="absolute inset-0 rounded-3xl border-2 border-blue-400/40  dark:border-blue-400/30 group-hover:shadow-[0_0_20px_rgba(59,130,246,0.5)]  transition duration-500 pointer-events-none">
+                </div>
+                <div class="text-6xl mb-5 transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3">
+                  🧑‍🤝‍🧑</div>
+                <h3
+                  class="kantumruy-pro text-xl font-bold text-gray-800 dark:text-gray-100 mb-3 transition-colors duration-500 group-hover:text-blue-500">
+                  បណ្ដាញសហគមន៍</h3>
+                <p class="kantumruy-pro text-dark-800 dark:text-white text-sm leading-relaxed">
+                  បង្កើតទំនាក់ទំនងរវាងអ្នករៀន
+                  និងអ្នកបង្រៀនអាចផ្សារភ្ជាប់គ្នាចែករំលែកនិងគាំទ្រគ្នាទៅវិញទៅមក។</p>
+              </div>
+              <div
+                class="relative group p-8 rounded-3xl bg-white/70 dark:bg-gray-900/60  backdrop-blur-xl shadow-lg shadow-2xl cursor-pointer  "
+                style="opacity: 1; transform: none;">
+                <div
+                  class="absolute inset-0 rounded-3xl border-2 border-blue-400/40  dark:border-blue-400/30 group-hover:shadow-[0_0_20px_rgba(59,130,246,0.5)]  transition duration-500 pointer-events-none">
+                </div>
+                <div class="text-6xl mb-5 transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3">
+                  🚀
+                </div>
+                <h3
+                  class="kantumruy-pro text-xl font-bold text-gray-800 dark:text-gray-100 mb-3 transition-colors duration-500 group-hover:text-blue-500">
+                  អភិវឌ្ឍន៍អនាគត</h3>
+                <p class="kantumruy-pro text-dark-800 dark:text-white text-sm leading-relaxed">
+                  បណ្ដុះបណ្ដាលនៅបញ្ញាស្មារតីដល់អ្នកជំនាន់ក្រោយឲ្យមានចំណេះដឹង និងជំនាញ
+                  ដើម្បីអភិវឌ្ឍន៍បច្ចេកវិទ្យានាពេលអនាគត។
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Section Title: Choose Course -->
+      <div class="text-center pt-4">
+        <h1
+          class="pt-4 koulen text-3xl lg:text-4xl bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 bg-clip-text text-transparent">
+          ជម្រើសវគ្គសិក្សារបស់យើង
+        </h1>
+        <p class="kantumruy-pro">
+          ក្រុមការ GENZ CODE របស់យើងសូមស្វាគមន៍បងប្អូនមកកាន់វគ្គសិក្សាដ៏ពេញនិយមជាជាច្រើនពេលបច្ចុប្បន្ន
+          សូមធ្វើការជ្រើសរើសវគ្គសិក្សាដូចខាងក្រោម។
+        </p>
+      </div>
+      <div class="w-full mt-5 p-6 bg-white rounded-xl dark:bg-gray-900">
+        <div class="flex justify-center mb-6">
+          <div class="relative w-full max-w-lg">
+            <input id="search"
+              class="w-full p-3 pl-12 pr-32 text-gray-900 text-sm rounded-full shadow-md focus:outline-none focus:ring-4 focus:ring-cyan-400/50 dark:bg-gray-800 dark:text-white dark:placeholder-gray-400 dark:focus:ring-cyan-500/50 transition-all duration-300 kantumruy-pro"
+              placeholder="ស្វែងរកវគ្គសិក្សា..." type="search" value="" />
+            <svg class="w-5 h-5 absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 dark:text-gray-300"
+              fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1110.5 3a7.5 7.5 0 016.15 13.65z"></path>
+            </svg>
+            <button type="submit"
+              class="absolute right-2 top-1/2 transform -translate-y-1/2 px-5 py-2 bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 text-white kantumruy-pro font-semibold rounded-full shadow-lg hover:scale-105 transition-transform duration-300">
+              ស្វែងរក
+            </button>
+          </div>
+        </div>
+
+        <div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 md:grid-cols-2 gap-6">
+
+            <!-- Course 1: C++ Programming -->
+            <div class="rounded-xl shadow-lg overflow-hidden cursor-pointer transition-all duration-300">
+              <div class="relative overflow-hidden h-[12em]">
+                <img alt="វគ្គសិក្សា C++ Programming" class="w-full h-full object-cover"
+                  src="https://miro.medium.com/v2/resize:fit:1400/0*sZ1IzKNMKqOSbwHU.jpg" />
+                <span class="absolute top-3 right-3 bg-blue-500 text-white text-xs font-bold px-3 py-1 rounded-full">
+                  NEW
+                </span>
+              </div>
+              <div class="bg-gray-white dark:bg-gray-800 text-dark-900">
+                <div class="px-5 flex items-center justify-between py-4">
+                  <span class="koulen text-blue-500 dark:text-cyan-400 rounded text-lg inline-block">
+                    វគ្គសិក្សា C++ Programming
+                  </span>
+                  <div class="flex items-center text-yellow-400 space-x-1 text-sm">
+                    <!-- 5 stars SVGs repeated -->
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em"
+                      width="1em" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M463 192H315.9L271.2 58.6C269 52.1 262.9 48 256 48s-13 4.1-15.2 10.6L196.1 192H48c-8.8 0-16 7.2-16 16 0 .9.1 1.9.3 2.7.2 3.5 1.8 7.4 6.7 11.3l120.9 85.2-46.4 134.9c-2.3 6.5 0 13.8 5.5 18 2.9 2.1 5.6 3.9 9 3.9 3.3 0 7.2-1.7 10-3.6l118-84.1 118 84.1c2.8 2 6.7 3.6 10 3.6 3.4 0 6.1-1.7 8.9-3.9 5.6-4.2 7.8-11.4 5.5-18L352 307.2l119.9-86 2.9-2.5c2.6-2.8 5.2-6.6 5.2-10.7 0-8.8-8.2-16-17-16z">
+                      </path>
+                    </svg>
+                    <!-- Repeat 4 more times -->
+                  </div>
+                </div>
+                <p align="justify" class="px-5 text-sm kantumruy-pro text-dark-900 dark:text-white mb-4">
+                  C ++ គឺជា object-oriented programming language ដែលជាផ្នែកបន្ថែមនៃភាសាសរសេរកម្មវិធី C បង្កើតឡើងដោយ
+                  Bjarne Stroustrup នៅចុងទសវត្សរ៍ឆ្នាំ 1970 ។
+                  ភាសានេះពិតជាសាកសមបំផុតសម្រាប់អ្នកចាប់ផ្ដើមសរសេរកូដកម្រិតដំបូង សារៈសំខាន់នៃការសិក្សាភាសា C++
+                  អាចយកទៅអភិវឌ្ឍន៍កម្មវិធី ហ្គេម និង ប្រព័ន្ធប្រត្តិបត្តិការផ្សេងៗជាដើម។
+                </p>
+                <button
+                  class="kantumruy-pro w-full bg-cyan-500 hover:bg-blue-600 transition-all duration-300 text-white py-2 font-semibold bg-gradient-to-r from-cyan-400 via-blue-500 shadow-lg p-3 hover:scale-105 transform transition-all duration-300">
+                  ចាប់ផ្តើមរៀន
+                </button>
+              </div>
+            </div>
+
+            <!-- Course 2: Web Design -->
+            <div class="rounded-xl shadow-lg overflow-hidden cursor-pointer transition-all duration-300">
+              <div class="relative overflow-hidden h-[12em]">
+                <img alt="វគ្គសិក្សា Web Design" class="w-full h-full object-cover"
+                  src="https://camo.githubusercontent.com/21bb8ae3629c4852404841252c65baa38426e4c0d01a68a0f7e6fd121d4649dc/68747470733a2f2f7777772e69696d2e66722f65636f6c652d7765622f77702d636f6e74656e742f75706c6f6164732f323031372f30312f48544d4c352e6a7067" />
+                <span
+                  class="absolute top-3 right-3 bg-blue-500 text-white text-xs font-bold px-3 py-1 rounded-full">FREE</span>
+              </div>
+              <div class="bg-gray-white dark:bg-gray-800 text-dark-900">
+                <div class="px-5 flex items-center justify-between py-4">
+                  <span class="koulen text-blue-500 dark:text-cyan-400 rounded text-lg inline-block">
+                    វគ្គសិក្សា Web Design
+                  </span>
+                  <div class="flex items-center text-yellow-400 space-x-1 text-sm">
+                    <!-- 5 stars SVGs repeated -->
+                  </div>
+                </div>
+                <p align="justify" class="px-5 text-sm kantumruy-pro text-dark-900 dark:text-white mb-4">
+
+                  ចង់ចេះរចនាគេហទំព័រជាលក្ខណៈ Static សិក្សាដោយប្រើប្រាស់ភាសា HTML និង CSS ។ HTML គឺជាភាសា Make up
+                  Language មួយសម្រាប់រៀបចំរចនាសម្ព័ន្ធគ្រោងឆ្អឹងរបស់គេហទំព័រ អោយមានរបៀបរៀបរយ។ ចំណែក CSS គឺជា stylesheet
+                  language សម្រាប់តុបតែងគ្រោងឆ្អឹងនៃគេហទំព័រអោយកាន់តែមានភាពស្រស់ស្អាតដូចជាពណ៌ ទំហំ ម៉ូត ជាដើម។
+                </p>
+                <button
+                  class="kantumruy-pro w-full bg-cyan-500 hover:bg-blue-600 transition-all duration-300 text-white py-2 font-semibold bg-gradient-to-r from-cyan-400 via-blue-500 shadow-lg p-3 hover:scale-105 transform transition-all duration-300">
+                  ចាប់ផ្តើមរៀន
+                </button>
+              </div>
+            </div>
+
+            <!-- Course 3: React JS -->
+            <div class="rounded-xl shadow-lg overflow-hidden cursor-pointer transition-all duration-300">
+              <div class="relative overflow-hidden h-[12em]">
+                <img alt="វគ្គសិក្សា React JS" class="w-full h-full object-cover"
+                  src="https://goodworklabs.com/wp-content/uploads/2016/10/reactjs.png" />
+                <span
+                  class="absolute top-3 right-3 bg-blue-500 text-white text-xs font-bold px-3 py-1 rounded-full">FREE</span>
+              </div>
+              <div class="bg-gray-white dark:bg-gray-800 text-dark-900">
+                <div class="px-5 flex items-center justify-between py-4">
+                  <span class="koulen text-blue-500 dark:text-cyan-400 rounded text-lg inline-block">
+                    វគ្គសិក្សា React JS
+                  </span>
+                  <div class="flex items-center text-yellow-400 space-x-1 text-sm">
+                    <!-- 5 stars SVGs repeated -->
+                  </div>
+                </div>
+                <p align="justify" class="px-5 text-sm kantumruy-pro text-dark-900 dark:text-white mb-4">
+                  React JS គឺជាLibrary JavaScript មួយ ដែលអភិវឌ្ឍដោយក្រុមហ៊ុន Facebook មានគោលបំណងសម្រាប់បង្កើត Users
+                  Interface នៅលើវេបសាយ ឬកម្មវិធីវេប។ វាជួយអ្នកអភិវឌ្ឍន៍បំបែក UI ធំៗទៅជាផ្នែកតូចៗហៅថា Components
+                  ដែលអាចប្រើឡើងវិញបាន និងងាយស្រួលគ្រប់គ្រង។
+                </p>
+                <button
+                  class="kantumruy-pro w-full bg-cyan-500 hover:bg-blue-600 transition-all duration-300 text-white py-2 font-semibold bg-gradient-to-r from-cyan-400 via-blue-500 shadow-lg p-3 hover:scale-105 transform transition-all duration-300">
+                  ចាប់ផ្តើមរៀន
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Section Title: Popular Tools -->
+      <div class="text-center pt-4">
+        <h1
+          class="koulen text-3xl lg:text-4xl bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 bg-clip-text text-transparent">
+          ឧបករណ៏ប្រើប្រាស់ដ៏ពេញនិយម
+        </h1>
+      </div>
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 bg-white dark:bg-gray-900 p-6 rounded-xl shadow-lg max-w-8xl mx-auto">
+
+        <div
+          class="flex items-center gap-4 bg-white dark:bg-gray-800 border-2 border-blue-400/20 rounded-xl shadow-sm hover:shadow-[0_0_15px_4px_rgba(59,130,246,0.4)] transition-all duration-300 p-4 cursor-pointer"
+          style="opacity: 1; transform: none;">
+          <div class="flex-shrink-0 w-16 h-16 flex items-center justify-center bg-gray-100 dark:bg-gray-700 rounded-lg">
+            <img alt="Visual Studio Code" class="w-12 h-12 object-contain"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png">
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold text-blue-500 transition-colors duration-300 hover:text-blue-600">Visual
+              Studio Code</h3>
+            <p class="kantumruy-pro text-gray-600 dark:text-gray-300 text-sm">កម្មវិធីកែសម្រួលកូដពេញនិយម
+              សម្រាប់ភាសាប្រព័ន្ធផ្សេងៗ។</p>
+          </div>
+        </div>
+
+        <div
+          class="flex items-center gap-4 bg-white dark:bg-gray-800 border-2 border-blue-400/20 rounded-xl shadow-sm hover:shadow-[0_0_15px_4px_rgba(59,130,246,0.4)] transition-all duration-300 p-4 cursor-pointer"
+          style="opacity: 1; transform: none;">
+          <div class="flex-shrink-0 w-16 h-16 flex items-center justify-center bg-gray-100 dark:bg-gray-700 rounded-lg">
+            <img alt="Visual Studio 2022" class="w-12 h-12 object-contain"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Visual_Studio_Icon_2022.svg/640px-Visual_Studio_Icon_2022.svg.png">
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold text-blue-500 transition-colors duration-300 hover:text-blue-600">Visual
+              Studio 2022</h3>
+            <p class="kantumruy-pro text-gray-600 dark:text-gray-300 text-sm">IDE កម្រិតខ្ពស់សម្រាប់ .NET, C#,
+              និងការអភិវឌ្ឍន៍កម្មវិធីធំៗ។</p>
+          </div>
+        </div>
+
+        <div
+          class="flex items-center gap-4 bg-white dark:bg-gray-800 border-2 border-blue-400/20 rounded-xl shadow-sm hover:shadow-[0_0_15px_4px_rgba(59,130,246,0.4)] transition-all duration-300 p-4 cursor-pointer"
+          style="opacity: 1; transform: none;">
+          <div class="flex-shrink-0 w-16 h-16 flex items-center justify-center bg-gray-100 dark:bg-gray-700 rounded-lg">
+            <img alt="IntelliJ IDEA" class="w-12 h-12 object-contain"
+              src="https://resources.jetbrains.com/storage/products/intellij-idea/img/meta/intellij-idea_logo_300x300.png">
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold text-blue-500 transition-colors duration-300 hover:text-blue-600">IntelliJ
+              IDEA</h3>
+            <p class="kantumruy-pro text-gray-600 dark:text-gray-300 text-sm">IDE កំពូលសម្រាប់ Java, Kotlin
+              និងភាសាផ្សេងទៀត។</p>
+          </div>
+        </div>
+
+        <div
+          class="flex items-center gap-4 bg-white dark:bg-gray-800 border-2 border-blue-400/20 rounded-xl shadow-sm hover:shadow-[0_0_15px_4px_rgba(59,130,246,0.4)] transition-all duration-300 p-4 cursor-pointer"
+          style="opacity: 1; transform: none;">
+          <div class="flex-shrink-0 w-16 h-16 flex items-center justify-center bg-gray-100 dark:bg-gray-700 rounded-lg">
+            <img alt="Dev C++" class="w-12 h-12 object-contain" src="asset/image/devC++.png">
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold text-blue-500 transition-colors duration-300 hover:text-blue-600">Dev C++
+            </h3>
+            <p class="kantumruy-pro text-gray-600 dark:text-gray-300 text-sm">IDE សម្រាប់ C/C++ មានភាពសាមញ្ញ
+              និងងាយស្រួលប្រើ។</p>
+          </div>
+        </div>
+
+        <div
+          class="flex items-center gap-4 bg-white dark:bg-gray-800 border-2 border-blue-400/20 rounded-xl shadow-sm hover:shadow-[0_0_15px_4px_rgba(59,130,246,0.4)] transition-all duration-300 p-4 cursor-pointer"
+          style="opacity: 1; transform: none;">
+          <div class="flex-shrink-0 w-16 h-16 flex items-center justify-center bg-gray-100 dark:bg-gray-700 rounded-lg">
+            <img alt="GitHub" class="w-12 h-12 object-contain"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/1200px-GitHub_Invertocat_Logo.svg.png">
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold text-blue-500 transition-colors duration-300 hover:text-blue-600">GitHub
+            </h3>
+            <p class="kantumruy-pro text-gray-600 dark:text-gray-300 text-sm">Platform សម្រាប់ version control និង
+              collaboration របស់ project code.</p>
+          </div>
+        </div>
+
+        <div
+          class="flex items-center gap-4 bg-white dark:bg-gray-800 border-2 border-blue-400/20 rounded-xl shadow-sm hover:shadow-[0_0_15px_4px_rgba(59,130,246,0.4)] transition-all duration-300 p-4 cursor-pointer"
+          style="opacity: 1; transform: none;">
+          <div class="flex-shrink-0 w-16 h-16 flex items-center justify-center bg-gray-100 dark:bg-gray-700 rounded-lg">
+            <img alt="Docker" class="w-12 h-12 object-contain"
+              src="https://images-eds-ssl.xboxlive.com/image?url=4rt9.lXDC4H_93laV1_eHM0OYfiFeMI2p9MWie0CvL99U4GA1gf6_kayTt_kBblFwHwo8BW8JXlqfnYxKPmmBfijdF281DL1PeDgEJEoHA60I0TAM11M7jmT750cDEPOmHHEG4OflAM56QepvPKSy0UAN8tMZrXh8oBZpBEoFLQ-&format=source">
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold text-blue-500 transition-colors duration-300 hover:text-blue-600">Docker
+            </h3>
+            <p class="kantumruy-pro text-gray-600 dark:text-gray-300 text-sm">Tool សម្រាប់ containerization, បង្កើត
+              និងដំណើរការ applications isolated.</p>
+          </div>
+        </div>
+
+        <div
+          class="flex items-center gap-4 bg-white dark:bg-gray-800 border-2 border-blue-400/20 rounded-xl shadow-sm hover:shadow-[0_0_15px_4px_rgba(59,130,246,0.4)] transition-all duration-300 p-4 cursor-pointer"
+          style="opacity: 1; transform: none;">
+          <div class="flex-shrink-0 w-16 h-16 flex items-center justify-center bg-gray-100 dark:bg-gray-700 rounded-lg">
+            <img alt="Postman" class="w-12 h-12 object-contain"
+              src="https://cdn.iconscout.com/icon/free/png-256/free-postman-logo-icon-svg-png-download-3030217.png">
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold text-blue-500 transition-colors duration-300 hover:text-blue-600">Postman
+            </h3>
+            <p class="kantumruy-pro text-gray-600 dark:text-gray-300 text-sm">Tool សម្រាប់ API testing និង debugging
+              របស់ Web services.</p>
+          </div>
+        </div>
+
+        <div
+          class="flex items-center gap-4 bg-white dark:bg-gray-800 border-2 border-blue-400/20 rounded-xl shadow-sm hover:shadow-[0_0_15px_4px_rgba(59,130,246,0.4)] transition-all duration-300 p-4 cursor-pointer"
+          style="opacity: 1; transform: none;">
+          <div class="flex-shrink-0 w-16 h-16 flex items-center justify-center bg-gray-100 dark:bg-gray-700 rounded-lg">
+            <img alt="Firebase" class="w-12 h-12 object-contain"
+              src="https://static.vecteezy.com/system/resources/previews/053/066/797/non_2x/free-logo-firebase-free-png.png">
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold text-blue-500 transition-colors duration-300 hover:text-blue-600">Firebase
+            </h3>
+            <p class="kantumruy-pro text-gray-600 dark:text-gray-300 text-sm">Platform សម្រាប់ backend, authentication,
+              និង database សម្រាប់ Web & Mobile.</p>
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- Section Title: Support Us -->
+      <div class="text-center pt-4">
+        <h1
+          class="koulen text-3xl lg:text-4xl bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 bg-clip-text text-transparent">
+          គាំទ្រពួកយើងតាមរយះ
+        </h1>
+      </div>
+      <section class="py-6 bg-white dark:bg-gray-800">
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <a href="https://www.facebook.com/share/18woBU623x/?mibextid=wwXIfr" target="_blank"
+              rel="noopener noreferrer"
+              class="relative group flex flex-col items-center justify-center gap-4 border-2 border-blue-400/30 border-blue-500 p-6 bg-white-100 dark:bg-gray-900 rounded-xl shadow-lg hover:shadow-[0_0_25px_rgba(59,130,246,0.5)] transition-all duration-500 cursor-pointer"
+              style="opacity: 1; transform: none;">
+              <div class="text-6xl transition-transform duration-500 group-hover:scale-110 group-hover:rotate-6">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em"
+                  width="1em" xmlns="http://www.w3.org/2000/svg"
+                  style="background: linear-gradient(to right, rgb(6, 182, 212), rgb(59, 130, 246), rgb(167, 139, 250)) text; -webkit-text-fill-color: transparent;">
+                  <path
+                    d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z">
+                  </path>
+                </svg>
+              </div>
+              <h3
+                class="text-lg font-semibold text-gray-900 dark:text-white transition-colors duration-300 group-hover:text-blue-400">
+                Facebook Page</h3>
+              <p class="text-gray-600 dark:text-gray-300 text-sm text-center">Follow us on Facebook to get latest
+                updates.</p>
+            </a>
+
+            <a href="https://t.me/GenZ_CoderCambodia" target="_blank" rel="noopener noreferrer"
+              class="relative group flex flex-col items-center justify-center gap-4 border-2 border-blue-400/30 border-blue-500 p-6 bg-white-100 dark:bg-gray-900 rounded-xl shadow-lg hover:shadow-[0_0_25px_rgba(59,130,246,0.5)] transition-all duration-500 cursor-pointer"
+              style="opacity: 1; transform: none;">
+              <div class="text-6xl transition-transform duration-500 group-hover:scale-110 group-hover:rotate-6">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 496 512" height="1em"
+                  width="1em" xmlns="http://www.w3.org/2000/svg"
+                  style="background: linear-gradient(to right, rgb(6, 182, 212), rgb(59, 130, 246), rgb(167, 139, 250)) text; -webkit-text-fill-color: transparent;">
+                  <path
+                    d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm121.8 169.9l-40.7 191.8c-3 13.6-11.1 16.9-22.4 10.5l-62-45.7-29.9 28.8c-3.3 3.3-6.1 6.1-12.5 6.1l4.4-63.1 114.9-103.8c5-4.4-1.1-6.9-7.7-2.5l-142 89.4-61.2-19.1c-13.3-4.2-13.6-13.3 2.8-19.7l239.1-92.2c11.1-4 20.8 2.7 17.2 19.5z">
+                  </path>
+                </svg>
+              </div>
+              <h3
+                class="text-lg font-semibold text-gray-900 dark:text-white transition-colors duration-300 group-hover:text-blue-400">
+                Telegram Channel</h3>
+              <p class="text-gray-600 dark:text-gray-300 text-sm text-center">Join our Telegram channel for instant
+                notifications.</p>
+            </a>
+
+            <a href="https://www.tiktok.com/@genz.coder?_t=ZS-8zHJsQlpyb9&_r=1" target="_blank"
+              rel="noopener noreferrer"
+              class="relative group flex flex-col items-center justify-center gap-4 border-2 border-blue-400/30 border-blue-500 p-6 bg-white-100 dark:bg-gray-900 rounded-xl shadow-lg hover:shadow-[0_0_25px_rgba(59,130,246,0.5)] transition-all duration-500 cursor-pointer"
+              style="opacity: 1; transform: none;">
+              <div class="text-6xl transition-transform duration-500 group-hover:scale-110 group-hover:rotate-6">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em"
+                  width="1em" xmlns="http://www.w3.org/2000/svg"
+                  style="background: linear-gradient(to right, rgb(6, 182, 212), rgb(59, 130, 246), rgb(167, 139, 250)) text; -webkit-text-fill-color: transparent;">
+                  <path
+                    d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z">
+                  </path>
+                </svg>
+              </div>
+              <h3
+                class="text-lg font-semibold text-gray-900 dark:text-white transition-colors duration-300 group-hover:text-blue-400">
+                TikTok</h3>
+              <p class="text-gray-600 dark:text-gray-300 text-sm text-center">Follow us on TikTok for short video
+                content.</p>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer
+    class="relative shadow-4xl bg-gradient-to-r from-cyan-50 via-white to-purple-50 dark:bg-gradient-to-r dark:from-gray-900 dark:via-gray-950 dark:to-gray-900 text-gray-700 dark:text-gray-200 transition-colors duration-500">
+    <div class="absolute inset-0">
+      <div class="absolute w-72 h-72 bg-cyan-200/10 rounded-full blur-3xl top-10 left-10 hidden dark:block"></div>
+      <div class="absolute w-72 h-72 bg-purple-200/10 rounded-full blur-3xl bottom-10 right-10 hidden dark:block"></div>
+      <div class="absolute w-72 h-72 bg-cyan-500/20 rounded-full blur-3xl top-10 left-10 dark:block hidden"></div>
+      <div class="absolute w-72 h-72 bg-purple-500/20 rounded-full blur-3xl bottom-10 right-10 dark:block hidden"></div>
+    </div>
+
+    <div class="relative max-w-6xl mx-auto px-6 py-16">
+      <!-- Header -->
+      <div class="text-center mb-12">
+        <h2
+          class="text-4xl font-extrabold bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 bg-clip-text text-transparent">
+          GenZ Coder
+        </h2>
+        <p class="kantumruy-pro mt-3 text-gray-600 dark:text-gray-400">
+          អភិវឌ្ឍន៍ជំនាញរបស់លោកអ្នក ដោយភ្ជាប់ទំនាក់ទំនងជាមួយពួកយើង រួមគ្នារីកចម្រើនជាសហគមន៍សិក្សា🚀
+        </p>
+      </div>
+
+      <!-- Feedback Input -->
+      <div class="max-w-xl mx-auto mb-12">
+        <div
+          class="flex items-center bg-white/20 dark:bg-gray-800/50 backdrop-blur-md rounded-full p-2 shadow-lg border border-gray-200 dark:border-gray-700">
+          <input type="text" placeholder="Share your feedback..."
+            class="flex-1 bg-transparent outline-none px-4 py-2 text-sm text-gray-700 dark:text-gray-200 placeholder-gray-400 dark:placeholder-gray-500">
+          <button
+            class="px-5 py-2 rounded-full bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 text-white font-semibold hover:opacity-90 transition">
+            Send
+          </button>
+        </div>
+      </div>
+
+      <!-- Social Links -->
+      <div class="flex justify-center gap-6 mb-10">
+        <a href="https://www.facebook.com/share/18woBU623x/?mibextid=wwXIfr"
+          class="flex items-center justify-center w-12 h-12 rounded-xl bg-white/20 dark:bg-gray-800/50 backdrop-blur-md border border-gray-300 dark:border-gray-700 hover:border-cyan-400 hover:text-cyan-500 transition-all">
+          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" class="text-lg"
+            height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+            </path>
+          </svg>
+        </a>
+
+        <a href="https://www.tiktok.com/@genz.coder?_t=ZS-8zHJsQlpyb9&_r=1"
+          class="flex items-center justify-center w-12 h-12 rounded-xl bg-white/20 dark:bg-gray-800/50 backdrop-blur-md border border-gray-300 dark:border-gray-700 hover:border-blue-500 hover:text-blue-500 transition-all">
+          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" class="text-lg"
+            height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z">
+            </path>
+          </svg>
+        </a>
+
+        <a href="https://t.me/GenZ_CoderCambodia"
+          class="flex items-center justify-center w-12 h-12 rounded-xl bg-white/20 dark:bg-gray-800/50 backdrop-blur-md border border-gray-300 dark:border-gray-700 hover:border-purple-500 hover:text-purple-500 transition-all">
+          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" class="text-lg"
+            height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z">
+            </path>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Footer Links -->
+      <div class="flex flex-wrap justify-center gap-6 text-sm mb-10 kantumruy-pro">
+        <a href="/" class="hover:text-cyan-500 transition" data-discover="true">ទំព័រដើម</a>
+        <a href="/about" class="hover:text-blue-500 transition" data-discover="true">អំពីយើង</a>
+        <a href="/courses" class="hover:text-cyan-500 transition" data-discover="true">វគ្គសិក្សា</a>
+        <a href="/contact" class="hover:text-blue-500 transition" data-discover="true">ទំនា់ទំនង</a>
+      </div>
+
+      <!-- Copyright -->
+      <div
+        class="text-center text-xs text-gray-500 dark:text-gray-400 border-t border-gray-200 dark:border-gray-800 pt-6">
+        © 2025 GenZ Coder. Empowering Everyone ❤️
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="./asset/js/main.js" type="text/javascript"></script>
+</body>
+
+</html>
